@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ボタン</title>
+  <!-- 裏設定エリアの開始 -->
+  <meta charset="utf-8"><!-- 文字化け防止 -->
+  <link rel="stylesheet" href="button2_taio_s.css" />
+  <script type="text/javascript">
+    for (let i = 0; i < sessionStorage.length; i++) {
+        const key = sessionStorage.key(i);
+        const value = sessionStorage.getItem(key);
+        console.log(`${key}: ${value}`);
+    }
+  </script>
+</head><!-- 裏設定エリアの終了 -->
+
+<body>
+  <!-- クエリパラメータから情報を得る -->
+  <script src="../../main/base2_all.js"></script>
+ <!--
+  <button type="button" class="koekake_next"
+    onclick="location.href=`../../php/koekake2_next.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">声掛け：OK</button>
+  <button type="button" class="koekake_again"
+    onclick="location.href=`../../php/koekake2_again.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">声掛け：再対応</button>
+  <button type="button" class="kyosyu_next"
+    onclick="location.href=`../../php/kyosyu2_next.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">挙手対応：OK</button>
+  <button type="button" class="kyosyu_again"
+    onclick="location.href=`../../php/kyosyu2_again.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">挙手対応：再対応</button>
+ -->
+  <button type="button" class="koekake_necessary"
+    onclick="location.href=`../../php/koekake2_necessary.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">声掛け対応開始</button>
+  <button type="button" class="kyosyu_necessary"
+    onclick="location.href=`../../php/kyosyu2_necessary.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">挙手対応開始</button>
+
+</body>
+
+</html>

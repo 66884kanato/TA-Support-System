@@ -1,0 +1,46 @@
+.unnecessary_or_ok {
+    appearance: none;
+    border: 0;
+    border-radius: 40px;
+    background: #4676D7;
+    color: #fff;
+    font-size: 13px; /* 例: フォントサイズを小さく設定 */
+    padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+    width: 120px;
+}
+
+.necessary_or_again {
+    appearance: none;
+    border: 0;
+    border-radius: 40px;
+    background: rgb(178, 34, 34);
+    color: #fff;
+    font-size: 13px; /* 例: フォントサイズを小さく設定 */
+    padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+    margin-left: 10px; /* ボタンとの間隔 */
+    width: 120px;
+}
+
+.skip {
+    appearance: none;
+    border: 0;
+    border-radius: 40px;
+    background: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    font-size: 13px; /* 例: フォントサイズを小さく設定 */
+    padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+    width: 90px;
+    margin-left: 10px; /* ボタンとの間隔 */
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center; /* 中央揃え */
+}
+
+.taio-time-container {
+    margin-left: 10px; /* ボタンとの間隔 */
+}

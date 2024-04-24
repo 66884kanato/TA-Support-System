@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-rows: 248px 94px;
+}
+
+.inf {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.b {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

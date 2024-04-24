@@ -1,0 +1,41 @@
+#cv {
+    position: absolute;
+    background-color: #FFF;
+    /*border: 1px solid black;*/
+}
+
+body {
+    font-family: 'Noto Emoji', sans-serif;
+}
+
+.seat-container {
+    width: 650px;
+    height: 360px;
+    /*border: 1px solid black; /* 黒い枠線を指定 */
+}
+
+.seat-button {
+    position: absolute;
+    /* サイズ */
+    width: 37px;
+    height: 37px;
+    /* ボタン枠線 */
+    border: none;
+}
+
+
+@keyframes blink {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 0.75s infinite; /* 1秒間で1周期の無限ループアニメーション */
+}

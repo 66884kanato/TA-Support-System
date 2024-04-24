@@ -1,0 +1,105 @@
+body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 140px 241px 140px;
+}
+
+.left1-frame {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /*【div】囲み枠部分 */
+    position: relative; /*必須*/
+    margin: 10px 10px 0px; /*外側の余白*/
+    padding: 10px 0px 10px; /*内側の余白*/
+    border: 6px double #99ffcc; /*枠線*/
+    background: fff; /*背景色*/
+    color: #999; /*テキスト色*/
+    box-shadow: 5px 5px 0 #aaffdd; /*囲み枠に影を付ける*/
+}
+
+.left1-frame .l1-title { /*【span】タイトル部分*/
+    position: absolute; /*必須*/
+    top: -24px;  /*囲み枠の上を基準として外側（上）に24px移動*/
+    left: 16px; /*囲み枠の左を基準として内側（右）に16px移動*/
+    line-height:48px; /*行の高さ*/
+    padding: 0 12px; /*左右の余白*/
+    background: #99ffcc; /*背景色*/
+    border-radius: 40px; /*角丸*/
+    color: #448866; /*テキスト色*/
+}
+
+.l1 p { /*【p】本文部分*/
+    margin: 0;
+    padding: 0;
+}
+
+.right1-frame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.left2-frame {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /*【div】囲み枠部分 */
+    position: relative; /*必須*/
+    margin: 10px 10px 0px; /*外側の余白*/
+    /*padding: 10px 0px 0px; /*内側の余白*/
+    border: 6px double #99ffcc; /*枠線*/
+    background: fff; /*背景色*/
+    color: #999; /*テキスト色*/
+    box-shadow: 5px 5px 0 #aaffdd; /*囲み枠に影を付ける*/
+}
+
+.left2-frame .l2-title { /*【span】タイトル部分*/
+    position: absolute; /*必須*/
+    top: -24px;  /*囲み枠の上を基準として外側（上）に24px移動*/
+    left: 16px; /*囲み枠の左を基準として内側（右）に16px移動*/
+    line-height:48px; /*行の高さ*/
+    padding: 0 12px; /*左右の余白*/
+    background: #99ffcc; /*背景色*/
+    border-radius: 40px; /*角丸*/
+    color: #448866; /*テキスト色*/
+}
+
+.l2 p { /*【p】本文部分*/
+    margin: 0;
+    padding: 0;
+}
+
+.right2-frame {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /*【div】囲み枠部分 */
+    position: relative; /*必須*/
+    margin: 10px 10px 0px; /*外側の余白*/
+    padding: 0px 0px 10px; /*内側の余白*/
+    border: 6px double #99ffcc; /*枠線*/
+    background: fff; /*背景色*/
+    color: #999; /*テキスト色*/
+    box-shadow: 5px 5px 0 #aaffdd; /*囲み枠に影を付ける*/
+}
+
+.right2-frame .r2-title { /*【span】タイトル部分*/
+    position: absolute; /*必須*/
+    top: -24px;  /*囲み枠の上を基準として外側（上）に24px移動*/
+    left: 16px; /*囲み枠の左を基準として内側（右）に16px移動*/
+    line-height:48px; /*行の高さ*/
+    padding: 0 12px; /*左右の余白*/
+    background: #99ffcc; /*背景色*/
+    border-radius: 40px; /*角丸*/
+    color: #448866; /*テキスト色*/
+}
+
+.r2 p { /*【p】本文部分*/
+    margin: 0;
+    padding: 0;
+}

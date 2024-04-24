@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-rows: 137px 178px;
+    padding: 2px;
+}
+
+.select_finger{
+    grid-row-end: 1;  
+    grid-row-end: 2;  
+    text-align: right
+}
+
+.select_text{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'MSPゴシック';
+}
+
+@keyframes blink {
+    0% {
+    opacity: 1;
+    }
+    50% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+.blinking {
+    animation: blink 1.25s infinite; /* 1秒間で1周期の無限ループアニメーション */
+}

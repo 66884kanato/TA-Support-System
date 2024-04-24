@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <title>HTML5 TIPS</title>
+  <!--キャンバスの背景色／枠線を指定（3）-->
+  <link rel="stylesheet" href="result2.css" />
+
+</head>
+
+<body>
+
+  <!-- クエリパラメータから情報を得る -->
+  <script src="../main/base2_all.js"></script>
+
+  <!--キャンバスの準備（1）-->
+  <div class="upper">
+    <h1 id="result"></h1>
+  </div>
+
+  <div class="under">
+    <h1 id="need_score"></h1>
+  </div>
+
+  <script>
+
+    document.getElementById("result").innerText = "得点:"+score+"点　声掛け回数:"+koekake+"回";
+    //第2ステージ進出ボタン
+    var to1button = document.createElement('button');
+    to1button.classList.add('to1-button');
+    to1button.innerText = '第1ステージへ戻る';
+    to1button.addEventListener('click', function(event){
+      window.location.href = `../../stage1/php/start1.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`
+    });
+    document.body.appendChild(to1button);
+    //ゲーム終了ボタン
+    const seatContainer = document.querySelector('.under');
+    var endbutton = document.createElement('button');
+    endbutton.classList.add('end-button');
+    endbutton.innerText = 'ゲームを終わる';
+    endbutton.addEventListener('click', function(event){
+      window.location.href = `../php/end.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`
+    });
+    document.body.appendChild(endbutton);
+    
+
+  </script>
+
+</body>
+
+</html>

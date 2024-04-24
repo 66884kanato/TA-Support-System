@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <title>次のクエスト</title>
+  <link rel="stylesheet" href="quest2.css" />
+  <!-- クエリパラメータから情報を得る -->
+  <script src="../main/base2_all.js"></script>
+  <!-- クエスト設定 -->
+  <script src="quest2.js"></script>
+
+</head>
+
+<body>
+
+  <div class="left">
+    <h1 id="text"></h1>
+  </div>
+  <div class="right">
+    <h1 id="point"></h1>
+  </div>
+
+  <!-- クエスト表示 -->
+  <script>
+
+    make_quest();
+
+    document.getElementById("point").innerText = "➡️ "+get_p+"点";
+    document.getElementById("text").innerText = text_q;
+
+  </script>
+</body>
+
+</html>

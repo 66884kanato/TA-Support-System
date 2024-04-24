@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ボタン</title>
+  <!-- 裏設定エリアの開始 -->
+  <meta charset="utf-8"><!-- 文字化け防止 -->
+  <link rel="stylesheet" href="button2_taio_c.css" />
+</head><!-- 裏設定エリアの終了 -->
+
+<body>
+  <!-- クエリパラメータから情報を得る -->
+  <script src="../../main/base2_all.js"></script>
+
+  
+  <div class="buttons-container">
+    <button type="button" class="ok"
+      onclick="location.href=`../../php/kyosyu2_complete.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">挙手対応：OK</button>
+    <button type="button" class="again"
+      onclick="location.href=`../../php/kyosyu2_again.php?student_id=${params1}&ta_id=${params2}&level=${params3}&completion=${params4}&again=${params5}&skip=${params6}&kyosyu=${params7}&score=${params8}&koekake=${params9}&quest=${params10}&stage=${params11}`">後でまた対応</button>
+    <div class="taio-time-container">対応時間:<span id="elapsedTime">0</span>秒</div>
+  </div>
+
+  <script type="text/javascript">
+
+    // 経過時間を格納する変数を初期化
+    let elapsedTime = 0;
+    // 経過時間を表示する要素を取得
+    const elapsedTimeElement = document.getElementById('elapsedTime');
+    // 1秒ごとに経過時間を更新する関数を設定
+    setInterval(() => {
+        // 経過時間を1増やす
+        elapsedTime += 1;
+
+        // HTMLの経過時間表示を更新
+        elapsedTimeElement.textContent = String(elapsedTime);
+    }, 1000); // 1000ミリ秒 = 1秒
+
+  </script>
+</body>
+
+</html>

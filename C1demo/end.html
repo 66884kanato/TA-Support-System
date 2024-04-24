@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>結果発表</title>
+  <!-- 裏設定エリアの開始 -->
+  <meta charset="utf-8"><!-- 文字化け防止 -->
+  <link rel="stylesheet" href="start_end/end.css" />
+  <!-- モーダル -->
+  <link rel="stylesheet" href="start_end/modal_end.css" />-
+  <!-- クエリパラメータから情報を得る -->
+  <script src="stage2/main/base2_all.js"></script>
+  <!-- パス指定 -->
+  <script>
+    var path_now_result = "../now_result/"; 
+    var path_result = "../result/"; 
+  </script>
+  <!-- 自分の今回と前回の結果を読み込む -->
+  <script src="start_end/me.js"></script>
+  <!-- ランキング読み込み，表示 -->
+  <script src="start_end/rank.js"></script>
+  
+</head>
+
+<body>
+
+  <!-- モーダルウィンドウを呼ぶ -->
+  <script src="start_end/modal_end.js"></script>
+
+  <div class="result">
+    <h1 id="score"></h1>
+    <h1 id="before"></h1>
+    <h1 id="koe_kyo"></h1>
+    <h1 id="taio"></h1>
+    <h1 id="quest"></h1>
+  </div>
+  <script>
+    document.getElementById("score").innerText = score_me_today + "点";
+    document.getElementById("before").innerText = "前回の点数: " + score_me_before + "点";
+    document.getElementById("koe_kyo").innerText = "声掛け回数: " + koekake_me_today + "回　挙手対応: " + kyosyu_me_today+"回";
+    document.getElementById("taio").innerText = "対応回数: " + taio_me_today + "回";
+    document.getElementById("quest").innerText = "クリアしたクエスト: " + quest_me_today + "個";
+  </script>
+  
+  <div class="rank">
+
+    <script>
+      make_rank();
+    </script>
+
+  </div>
+
+  <div class="syogo">
+    <h1 id="badge"></h1>
+  </div>
+  <script>
+    var syogo_text;
+    if(0<=score && score<150){
+      syogo_text = "可(ノーマルTA)";
+    }else if(150<=score && score<400){
+      syogo_text = "良(ナイスTA)";
+    }else if(400<=score && score<700){
+      syogo_text = "優(スーパーTA)";
+    }else if(700<=score && score<1000){
+      syogo_text = "秀(アルティメットTA)";
+    }else{
+      syogo_text = "神(ゴッドTA)";
+    }
+    document.getElementById("badge").innerText = "称号: " + syogo_text;
+  </script>
+  
+</body>
+
+</html>

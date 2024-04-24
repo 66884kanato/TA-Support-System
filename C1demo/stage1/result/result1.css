@@ -1,0 +1,72 @@
+body {
+    width: 380;
+    height: 60;
+}
+
+h1 {
+    font-family: 'MSPゴシック';
+    font-size: 20px;
+}
+
+.upper{
+    position: absolute;
+    width: 380;
+    height: 30;
+    left: 10px;
+}
+
+.under{
+    position: absolute;
+    width: 380;
+    height: 30;
+    left:  10px;                /* 左からの位置指定 */
+    top: 45px;                  /* 上からの位置指定 */
+}
+
+.koekake-button{
+    position: absolute;
+    left:  320px;                /* 左からの位置指定 */
+    top: 10px;   
+    width: 90px; /* 横幅 */
+    height: 40px; /* 縦幅 */
+    appearance: none;
+    border: 1;
+    border-radius: 40px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 12px; /* 例: フォントサイズを小さく設定 */
+    /*padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+}
+
+.to2-button{
+    position: absolute;
+    left:  10px;                /* 左からの位置指定 */
+    top: 55px;   
+    width: 280px; /* 横幅 */
+    height: 40px; /* 縦幅 */
+    appearance: none;
+    border: 0;
+    border-radius: 40px;
+    background: #fb6f6f;
+    color: #fff;
+    font-size: 13px; /* 例: フォントサイズを小さく設定 */
+    /*padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+}
+
+.end-button{
+    position: absolute;
+    left:  300px;                /* 左からの位置指定 */
+    top: 55px;   
+    width: 110px; /* 横幅 */
+    height: 40px; /* 縦幅 */
+    appearance: none;
+    border: 1;
+    border-radius: 40px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 13px; /* 例: フォントサイズを小さく設定 */
+    /*padding: 15px 8px; /* 例: パディングを減らしてボタンのサイズを小さくする */
+    font-weight: bold;
+}

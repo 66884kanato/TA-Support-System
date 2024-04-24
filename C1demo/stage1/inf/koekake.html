@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+
+<head>
+  <title>学生情報とボタン</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="inf1.css" />
+</head>
+
+
+<body>
+
+  <!--<div class="base-frame">-->
+  <div class="inf">
+    <script type="text/javascript">
+      var form = './studentinf/student1.html';
+      var params = window.location.search;
+      var thisScript = document.scripts[document.scripts.length - 1];
+      var iframe = document.createElement('iframe');
+
+      iframe.setAttribute('src', form + params);
+      iframe.setAttribute('width', '100%');
+      iframe.setAttribute('height', '100%');
+      iframe.setAttribute('type', 'text/html');
+      iframe.setAttribute('frameborder', 0);
+      iframe.setAttribute('allowTransparency', 'true');
+
+      thisScript.parentElement.replaceChild(iframe, thisScript);
+    </script>
+  </div>
+  <div class="b">
+    <script type="text/javascript">
+
+      var button = sessionStorage.getItem('button');
+      if(button=="necessary"){
+        var form = './button/button1_koekake_c.html';
+      }else{
+        var form = './button/button1_koekake_s.html';
+      }
+      var params = window.location.search;
+      var thisScript = document.scripts[document.scripts.length - 1];
+      var iframe = document.createElement('iframe');
+
+      iframe.setAttribute('src', form + params);
+      iframe.setAttribute('width', '100%');
+      iframe.setAttribute('height', '100%');
+      iframe.setAttribute('type', 'text/html');
+      iframe.setAttribute('frameborder', 0);
+      iframe.setAttribute('allowTransparency', 'true');
+      
+      thisScript.parentElement.replaceChild(iframe, thisScript);
+    </script>
+  </div>
+  
+
+
+</body>
+
+
+
+</html>
