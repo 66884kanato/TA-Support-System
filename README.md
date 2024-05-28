@@ -35,4 +35,4 @@ Armondらが定めたフレームワークに基づいて，以下のゲーム�
 <img width="1209" alt="スクリーンショット 2024-05-28 14 20 37" src="https://github.com/66884kanato/TA_Support_System/assets/167945386/79b1c062-abfc-4478-a088-f5c93de1d4de">
 <img width="1211" alt="スクリーンショット 2024-05-28 14 20 55" src="https://github.com/66884kanato/TA_Support_System/assets/167945386/de01e572-3d11-4fbb-b396-1a2a2964b1d2">
 <img width="1211" alt="スクリーンショット 2024-05-28 14 21 10" src="https://github.com/66884kanato/TA_Support_System/assets/167945386/8f764ba3-dd08-499a-a9ee-7889720ebc9d">
-<img width="1210" alt="スクリーンショット 2024-05-28 14 21 27" src="https://github.com/66884kanato/TA_Support_System/assets/167945386/55573ccb-2f8e-4cc5-8548-2295dc869b35">
+<img width="987" alt="スクリーンショット 2024-05-28 14 23 04" src="https://github.com/66884kanato/TA_Support_System/assets/167945386/44c3db86-be99-4f75-b165-ed36998c0adc">
